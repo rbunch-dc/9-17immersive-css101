@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Float - makes no sense</title>
+
+	<style type="text/css" media="screen">
+		#container{
+			color: white;
+			background-color: red;
+			border: 2px black solid;
+			/* float: left; */
+			overflow: hidden;
+			width: 80%;
+			margin: auto;
+		}
+		.left{
+			float: left;
+			width: 40%;
+			background-color: blue;
+		}
+		.right{
+			float: right;
+			width: 10%;
+			background-color: green;
+		}
+	</style>
+
+</head>
+<body>
+
+	FLOAT
+	1. A block level element no longer takes up the whole page. It's not inline, it's not inline-block, it's not block... it's not even display. i.e., margin will NOT be added.
+	2. The element, will go as far left as it can until it runs into something else floating in that direction, or it runs out of room
+	3. FLoated elements are in their own universe. They don't pass their height up to their parents, unless their parents are also floating. You will get odd behaviour when static elements run into floated elements.
+	3b. To force height up....
+		1. Set the parent to float
+		2. overflow: hidden
+
+	<div id="container">
+		<div class="left">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, excepturi quas reiciendis doloremque, ex quae nisi iusto eligendi ullam molestiae, assumenda! Ab eius, commodi reiciendis recusandae asperiores, ratione dolores repudiandae.
+		</div>
+		<div class="left">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, excepturi quas reiciendis doloremque, ex quae nisi iusto eligendi ullam molestiae, assumenda! Ab eius, commodi reiciendis recusandae asperiores, ratione dolores repudiandae.
+		</div>
+		<div class="left">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, excepturi quas reiciendis doloremque, ex quae nisi iusto eligendi ullam molestiae, assumenda! Ab eius, commodi reiciendis recusandae asperiores, ratione dolores repudiandae.
+		</div>				
+		<div class="right">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, excepturi quas reiciendis doloremque, ex quae nisi iusto eligendi ullam molestiae, assumenda! Ab eius, commodi reiciendis recusandae asperiores, ratione dolores repudiandae.
+		</div>			
+	</div>
+
+
+</body>
+</html>
