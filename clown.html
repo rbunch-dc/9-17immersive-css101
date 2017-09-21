@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Car</title>
+        <style>
+            body {
+                position: relative;
+                background-color: black;
+            }
+            #moon {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                box-shadow: 15px 15px 0 0 yellow;
+                position: absolute;
+                top: 100px;
+                left: 800px;
+            }
+
+            #car-window {
+                width: 400px;
+                height: 100px;
+                border-radius: 80px 80px 10px 10px;
+                position: absolute;
+                background-color: red;
+                top: 300px;
+                left: 400px;
+            }
+
+            /*.car-brush {
+                width: 0;
+                height: 0;
+                border-left: 70px solid transparent;
+                border-right: 70px solid transparent;
+                border-top: 100px solid white;
+                border-radius: 50%;
+                position: absolute;
+            }*/
+
+            #inner-window {
+                width: 350px;
+                height: 80px;
+                border-radius: 50px 50px 15px 15px;
+                position: absolute;
+                background-color: white;
+                top: 15px;
+                left: 25px;
+            }
+
+            .car-brush.one {
+                top: 80px;
+                left: 40px;
+            }
+
+            .car-brush.two {
+                top: 80px;
+                left: 220px;
+            }
+
+            #car-body {
+                width: 500px;
+                height: 200px;
+                border-radius: 100px 100px 130px 130px;
+                position: absolute;
+                background-color: red;
+                top: 380px;
+                left: 350px;
+                z-index: 3;
+            }
+
+            .car-light.one{
+                width: 75px;
+                height: 105px;
+                background-color: yellow;
+                position: absolute;
+                border-radius: 40px 130px 70px 80px;
+                top: 410px;
+                left: 400px;
+                z-index: 3;
+            }
+
+            .car-light.two {
+                width: 75px;
+                height: 105px;
+                background-color: yellow;
+                position: absolute;
+                border-radius: 130px 40px 70px 80px;
+                top: 410px;
+                left: 730px;
+                z-index: 3;
+            }
+
+            .wheel.two {
+                width: 50px;
+                height: 50px;
+                background-color: grey;
+                position: absolute;
+                border-radius: 10px;
+                top: 575px;
+                left: 705px;
+                z-index:2;
+            }
+
+            .wheel.one {
+                width: 50px;
+                height: 50px;
+                background-color: grey;
+                position: absolute;
+                border-radius: 10px;
+                top: 575px;
+                left: 445px;
+                z-index:2;
+            }
+            .mirror-handle {
+                width: 30px;
+                height:10px;
+                position: absolute;
+                background-color: red;
+            }
+
+            .mirror-handle.one {
+                top: 380px;
+                left: 370px;
+            }
+            .mirror-handle.two {
+                top: 380px;
+                left: 800px;
+            }
+            /*.side-mirror {
+                width: 75px;
+                height: 105px;
+                position: absolute;
+                border-radius: 40px 130px 70px 80px;
+                box-shadow: 15px 15px 0 0 red;
+                top: 40px;
+                left: 400px;
+            }*/
+
+            #shadow {
+                width: 450px;
+                height: 100px;
+                background-color: #303030;
+                border-radius: 9px 1px 90px 86px;
+                box-shadow: 10px 10px 5px #303030;
+                position: absolute;
+                top: 520px;
+                left: 370px;
+            }
+
+            #light-shadow {
+                border-bottom: 300px solid yellow;
+                border-left: 150px solid transparent;
+                border-right: 150px solid transparent;
+                height: 0;
+                width: 300px;
+                position: absolute;
+                top: 620px;
+                left: 300px;
+            }
+
+        </style>
+</head>
+<body>
+    <div id="moon"></div>
+    <div id="car-window">
+        <div id="inner-window"></div>
+        <div class="car-brush one"></div>
+        <div class="car-brush two"></div>
+    </div>
+    <div id="car-body"></div>
+    <div class="car-light one"></div>
+    <div class="car-light two"></div>
+    <div class="wheel one"></div>
+    <div class="wheel two"></div>
+    <div class="mirror-handle one"></div>
+    <div class="mirror-handle two"></div>
+    <div id="shadow"></div>
+    <div id="light-shadow"></div>
+    <div id="talk-bubble"></div>
+</body>
+</html>

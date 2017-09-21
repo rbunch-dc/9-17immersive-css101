@@ -1,0 +1,18 @@
+/* body{
+	background-color: black;
+} */
+
+#google-wrapper{
+	text-align: center;
+	height: 100vh;
+	position: relative;
+}
+
+ul,ol{
+	list-style: none;
+}
+
+#footer{
+	position: absolute;
+	bottom: 0;
+}

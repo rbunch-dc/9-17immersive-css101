@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pirate Ship</title>
+	<style type="text/css" media="screen">
+
+		body {
+			position: relative;
+			height: 100vh;
+			margin: 0;
+			background-color: darkslategrey;
+		}
+
+		.ocean {
+			position: absolute;
+			background-color: cyan;
+			height: 300px;
+			width: 100%;
+			left: 0;
+			top: 800px;
+			z-index: 0
+		}
+
+		.boat {
+			position: absolute;
+			width: 900px;
+			height: 300px;
+			top: 600px;
+			left: 500px;
+			border-radius: 0px 0px 180px 270px;
+			background-color: brown;
+			z-index: 1
+		}
+
+		.cabin {
+		    position: absolute;
+		    width: 312px;
+		    height: 150px;
+		    top: 544px;
+		    left: 1088px;
+		    border-radius: 15px 15px 0px 0px;
+		    background-color: brown;
+		}
+
+
+		.mast {
+		    position: absolute;
+		    background-color: brown;
+		    height: 450px;
+		    width: 40px;
+		    top: 190px;
+		    left: 900px;
+		}
+
+		.sail {
+		    position: absolute;
+		    background-color: black;
+		    height: 275px;
+		    width: 600px;
+		    top: 233px;
+		    left: 640px;
+		    z-index: 10;
+		    border-radius: 90px 60px 25px 40px;
+		}
+
+		.crows-nest {
+		    position: absolute;
+		    background-color: brown;
+		    height: 50px;
+		    width: 70px;
+		    top: 160px;
+		    left: 885px;
+		    border-radius: 0px 0px 15px 15px;
+		}
+
+		.flagpole {
+		    position: absolute;
+		    background-color: brown;
+		    height: 68px;
+		    width: 23px;
+		    top: 100px;
+		    left: 908px;
+		    border-radius: 5px 5px 5px 5px;
+		}
+
+		.window {
+		    position: absolute;
+		    background-color: black;
+		    border: 7px solid yellow;
+		    height: 60px;
+		    width: 60px;
+		    top: 680px;
+		    border-radius: 50%;
+			z-index: 15;
+		}
+
+		.window.one {
+			left: 650px;
+		}
+
+		.window.two {
+			left: 840px;
+		}
+
+		.window.three {
+			left: 1030px;
+		}
+
+		.window.four {
+			left: 1220px;
+		}
+
+		.flag {
+		    position: absolute;
+		    background-color: black;
+		    width: 39px;
+		    height: 27px;
+		    top: 103px;
+		    left: 931px;
+		    border-radius: 0px 3px 3px 0px;
+		}
+
+		.cloud {
+			position: absolute;
+		    background-color: black;
+		    width: 1000px;
+		    height: 70px;
+		    top: 0px;
+		    left: 0px;
+		    border-radius: 0px 0px 50% 50%;
+		}
+
+		.cloud.two {
+			left: 922px;
+		}
+
+		.infinity {
+		    position: absolute;
+		    top: 311px;
+		    left: 804px;
+		    width: 212px;
+		    height: 100px;
+		    z-index: 100;
+		}
+
+		.infinity:before,
+		.infinity:after {
+		    content: "";
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 60px;
+		    height: 60px;
+		    border: 20px solid silver;
+		    -moz-border-radius: 50px 50px 0 50px;
+		         border-radius: 50px 50px 0 50px;
+		    -webkit-transform: rotate(-45deg);
+		       -moz-transform: rotate(-45deg);
+		        -ms-transform: rotate(-45deg);
+		         -o-transform: rotate(-45deg);
+		            transform: rotate(-45deg);
+		}
+
+		.infinity:after {
+		    left: auto;
+		    right: 0;
+		    -moz-border-radius: 50px 50px 50px 0;
+		         border-radius: 50px 50px 50px 0;
+		    -webkit-transform: rotate(45deg);
+		       -moz-transform: rotate(45deg);
+		        -ms-transform: rotate(45deg);
+		         -o-transform: rotate(45deg);
+		            transform: rotate(45deg);
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+	<div class="boat">
+	</div>
+
+	<div class="ocean">
+	</div>
+
+	<div class="mast">
+	</div>
+
+	<div class="sail">
+	</div>
+
+	<div class="cabin">
+	</div>
+
+	<div class="crows-nest">
+	</div>
+
+	<div class="flagpole">
+	</div>
+
+	<div class="window one">
+	</div>
+
+	<div class="window two">
+	</div>
+
+	<div class="window three">
+	</div>
+
+	<div class="window four">
+	</div>
+
+	<div class="triangle-flag">
+	</div>
+
+	<div class="flag">
+	</div>
+
+	<div class="infinity">
+	</div>
+
+	<div class="cloud one">
+	</div>
+
+	<div class="cloud two">
+	</div>
+
+</body>
+</html>
