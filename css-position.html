@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
+
+
+	<style>
+
+		.static-box{
+			height: 100px;
+			width: 100px;
+			background-color: green;
+			top: 100px; /* Will be ignored */
+			left: 200px; /* Will also be ignored */
+			position: static; /* Already the default */
+		}
+		.static p{
+			font-family: 'Wendy One', sans-serif;
+		}
+
+		.relative-box{
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			position: relative;
+			bottom: 300px; /* This element is relative, so this will work... */
+			right: -100px; /* Suck it backwards from teh right */
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<h1>Position property has 4 options</h1>
+	<ol>
+		<li><a href="#static">Static</a></li>
+		<li>Relative</li>
+		<li>Absolute</li>
+		<li>Fixed</li>
+	</ol>
+
+	
+	<a name="static"></a>
+	<div class="static">
+		<h1>Static</h1>
+		<p>Static is the default value for the position property.</p>
+		<p>Top, bottom, left, and right will NOT work with static.</p>
+		<p>This element will show up, top to bottom, left to right. Nothing special, and it can't be moved</p>
+		<div class="static-box">Static Box</div>
+	</div>
+
+	<a name="relative"></a>
+	<div class="relative">
+		<h1>Relative</h1>
+		<p>A relative position is the same as static (top to bottom, left to right), EXCEPT you can move it with top, bottom, left, and right.</p>
+		<p>IF you move it, it will sit on top of other stuff and the rest of the page will think it's still where "static" would be.</p>
+		<div class="relative-box">Relative Box</div>
+	</div>
+
+</body>
+</html>

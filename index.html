@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS PRACTICE</title>
+
+	<style>
+
+		#container{
+			/* shrink down the size from 100% */
+			width: 80%;
+			/* Center it inside it's parent (margin equal on both sides) */
+			margin: auto;
+			/* Make the backgrounnd color easier to see */
+			background-color: black;
+			/* make text visible against black */
+			color:  red;
+		}
+
+		/* A comma is css, is like an OR statement */
+		#the-block, #the-block2{
+			width: 48%;
+			display: inline-block;
+			background-color: purple;
+
+		}
+
+		/* A space is an nested AND statement. It means, find something with id of "the-block" INSIDE something with an id of "container" */
+		#container #the-block{
+
+		}
+
+/* 		No space and no comma, is like an AND statement. The thing must
+		have both (class of one AND class of big) */
+		.one.big{
+
+		}
+
+		.i-am-inline{
+			background-color: green;
+			width: 100px; /* will be ignored */
+			margin-top: 1000px; /* will be ignored */
+			margin-left: 100px; /* will be honored */
+		}
+
+/* 		#the-block2{
+			width: 49%;
+			display: inline-block;
+		}
+ */
+
+		.meme-holder{
+			width: 300px;
+			border: 2px solid red;
+			display: inline-block; /* allow the two containers to sit next to each other */
+		}
+/* 		space = img tags INSIDE of 
+		things with a class of meme-holder */
+		.meme-holder img{
+			max-width: 100%
+		}
+
+		.meme-holder.hide{
+			display: none;
+			/* visibility: hidden; */
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="meme-holder">
+		<img src="http://starecat.com/content/wp-content/uploads/two-states-of-every-programmer-i-am-god-i-have-no-idea-what-im-doing.jpg" />
+	</div>
+	<div class="meme-holder hide">
+		<img src="http://starecat.com/content/wp-content/uploads/two-states-of-every-programmer-i-am-god-i-have-no-idea-what-im-doing.jpg" />
+	</div>
+	<div class="meme-holder">
+		<img src="http://starecat.com/content/wp-content/uploads/two-states-of-every-programmer-i-am-god-i-have-no-idea-what-im-doing.jpg" />
+	</div>
+
+
+<!-- BLOCK ELMENT -->
+<!-- 	1. A BLOCK level element, by default, takes up all teh sapce to the right
+	and to tehleft possible, internal to it's parent
+	2. It CAN have a height and a width
+	3. NOTHING can ever be on either side (internal to the parent) because it's
+	100%. If you change the width, it will just add margin. Blocks will ignore
+	margin you add, because they are 100%
+	4. If you cahnge the size, it will still take up 100% (at least), but the rest outside of the wide, will just be more margin -->
+	<!-- 5. Can be > 100% -->
+
+	<div id="container">
+		<div id="the-block" class="one big">
+			Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. Some text in a block. 
+		</div>
+		<div id="the-block2" class="two big">
+			Some more text in another block
+		</div>
+
+<!-- 		Inline Elements
+		1. Respect left and right padding, left and right margin
+		but will ignore top and bottom
+		2. Couldn't care less what is left or right. 
+		3. With a few exceptions (namely images) you CANNOT tell an inline
+		element how big to be.
+		4. Will happily ignore all block level rules unless forced to do so -->
+
+<!-- 		Inline block
+		1. Can have stuff on eitehr side (inline positive)
+		2. Can have height/width (block positive)
+		3. Can have top/bottom padding/margin (block positive)
+ -->
+		<span class="i-am-inline">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sint alias, magnam autem doloribus rem et optio error accusamus facere obcaecati officiis quaerat aut inventore eum? Tempora praesentium deserunt necessitatibus?
+		</span>
+
+	</div>
+
+
+		
+
+</body>
+</html>
