@@ -42,14 +42,34 @@ ul,ol{
 
 .menu .menu-item.bell{
 	background-image: url('https://ssl.gstatic.com/gb/images/i1_1967ca6a.png');
-	height: 15px;
-	width: 30px;
-/* 	for background-images, you can use the background-position property
-	by default, background-images start at 0,0.
-	Sometimes you won't want to start there (i.e., a sprite sheet) */
+	height: 20px;
+	width: 20px;
 	background-position: -194px -21px;
 	background-color: rgba(0,0,0,.55);
+	background-size: 528px 71px;
+	border-radius: 50%;
+	padding: 0px;
+}
 
+.search-bar{
+	width: 600px;
+	margin: auto;
+/* 	anytime you have a block level element and add a width you will
+	get a ton of right margin. 
+	margin: auto will split it up on both sides; 
+	text-align: center will center things INSIDE the element
+	margin: auto will center the element inside it's parent (OUTSIDE);
+*/
+}
+
+.search-bar input{
+	width: 100%;
+	height: 40px;
+	font-size: 32px;
+	/* padding inside of an input will push the input border away from the text */
+	padding-left: 20px;
+	margin-bottom: 30px;
+	border: solid #B9B0B0 1px;
 }
 
 #footer{
