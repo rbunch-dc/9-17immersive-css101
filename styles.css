@@ -60,6 +60,9 @@ ul,ol{
 	text-align: center will center things INSIDE the element
 	margin: auto will center the element inside it's parent (OUTSIDE);
 */
+	/* Required for the absolute positioning of the mic */
+	position: relative;
+
 }
 
 .search-bar input{
@@ -72,7 +75,52 @@ ul,ol{
 	border: solid #B9B0B0 1px;
 }
 
+
+.mic{
+	height: 30px;
+	width: 30px;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACrElEQVR42u2Xz2sTQRSAX8VSb1K8iNqKooJH2Ux6Ksn+iPQqxZMIehJB0do/IMhmQWsvHr2KSEGk0tSLIoWIYNUKij20F2/N7iaUZnYT0kYzzhMKs0HDJiTdLcwHDwKZSd63781LBiQSSW9JZdkhzfKm1Rz9mjZp/W9YdEU3vXv4HsQZ40FtNG36q5rls//Ej4tmbSS2T15Mvp3ExOPmEMQNbBtMMEyoljcFcQN7PqyAlqNfIG7gYQ0tYNIaxA1MrJPY3wImbUqBKAXSFv0tBSIVMOkvKRDtGKWN/T6FdqRAxFNoWwpEPIXqUqBT6ALU/UVgu8GW4GD3f6f9TRDYNJTDrk7YbtiqUumHwIYoUJuHERDAS0r4CvgFECgbY+cFAR7KT+g1POmCKFDNw6WggHc3fBtVb4CAoyauBgXIG+g1Xh5mRAGah6cggBd11fK/h7lOprIs0H6uRl6KAo5O7kOv4QmPiwJ4Jqqv4FiwCtXjvD2+tRmfK6kZ/ygI2HritK0rDVGgrClJ6DWMwYC/AGuCBMYcIC2V0CzvjmbRz3j3xUjn6CfeYreUJ2wQkGD75INPX1mFfsEFrrcIYCvdhC4paWQakxajpJMr0C9YFg54i7AsClRmh9/xnr0NHcInzZStk2aLwAcGMAD9pPIazvFKVDD5rdnhJeHLX5RTyRPQHpz5o66emMc9wdlPtvA8wF7Aq2BUHh1525qEo5JtR1WeOXpickO9cJIpyuD6xJmhYiZ5ytWSl3mlnuOaf+2zDaLDXmJrSgZ/MYVEugo+gSh+FkSBa4yd5Ul87DZ5XpFl/AyIEjzYjkau8WqshU2cr13HPbgX4gJOD97n465GZlyVvC9mSKloKI2iTnbwNT+gBX54H+IaXAtxJzE3ycSAFqSAFJACUkAikXD+AHj5/wx2o5osAAAAAElFTkSuQmCC) no-repeat -3px 0;
+	position: absolute;
+    top: 5px;
+    right: 10px;
+    background-size: 24px 24px;
+}
+
+.buttons .button{
+	width: 135px;
+	height: 35px;
+	background-color: #F6F6F6;
+	color: grey;
+	font-size: 13px;
+	outline: none;
+}
+
 #footer{
 	position: absolute;
 	bottom: 0;
+/* 	with absolute position, widht is no longer a given, because
+	things can be on top of each other */
+	width: 100%;
+	background-color: #f2f2f2;
+/* 	if the height and line-height are the same, the text will center
+	vertically, growing out from the middle */
+	height: 50px;
+	line-height: 50px;
+}
+
+#footer ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+#footer .menu-item{
+	font-size: 16px;
+	float: left;
+}
+
+.footer-left{
+	float: left;
+}
+.footer-right{
+	float:right;
 }

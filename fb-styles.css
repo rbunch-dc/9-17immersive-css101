@@ -1,0 +1,33 @@
+/* body{
+	background-color: blue;
+} */
+
+#header{
+	height: 42px;
+	background-color: #4267B2
+}
+
+.navbar{
+	max-width: 900px;
+	margin: auto;
+}
+
+.fb-logo{
+	background-image: url('https://www.facebook.com/rsrc.php/v3/ye/r/jNvmNEDilLw.png');
+	background-repeat: no-repeat;
+	background-size: 25px 626px;
+	background-position: 0 -50px;
+	display: block;
+	height: 24px;
+	outline: none;
+	overflow: hidden;
+	text-indent: -999px;
+	white-space: nowrap;
+	width: 24px;	
+}
+
+
+#ads{
+	color: white;
+}
+
