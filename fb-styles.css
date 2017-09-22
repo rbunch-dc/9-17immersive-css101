@@ -1,6 +1,6 @@
-/* body{
-	background-color: blue;
-} */
+body{
+	background-color: #E9EBEE;
+}
 
 #header{
 	height: 42px;
@@ -12,12 +12,25 @@
 	margin: auto;
 }
 
+.navbar-left{
+	width: 50%;
+}
+
+.navbar-left, .navbar-right{
+	display: inline-block;
+}
+
+.navbar-left input{
+	width: 90%;
+	display: inline-block;
+}
+
 .fb-logo{
+	display: inline-block;
 	background-image: url('https://www.facebook.com/rsrc.php/v3/ye/r/jNvmNEDilLw.png');
 	background-repeat: no-repeat;
 	background-size: 25px 626px;
 	background-position: 0 -50px;
-	display: block;
 	height: 24px;
 	outline: none;
 	overflow: hidden;
@@ -26,8 +39,43 @@
 	width: 24px;	
 }
 
+.navbar-right{
+	width: 49%;
+}
 
-#ads{
+/* The ">" will apply the rule ONLY to direct decendents of the parent */
+.navbar-right > div, .navbar-right li{
+	display: inline-block;
+}
+
+/* #ads{
 	color: white;
 }
 
+ */
+
+#content{
+	max-width: 900px;
+	margin: auto;
+	margin-top: 15px;
+}
+
+#content > div{
+	display: inline-block;
+	vertical-align: top;
+	background-color: #ddd;
+	min-height: 100vh;
+	border-radius: 5px;
+}
+
+.left-content{
+	width: 20%;
+}
+
+.main-content{
+	width: 50%;
+}
+
+.right-content{
+	width: 25%;
+}
