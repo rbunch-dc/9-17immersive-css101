@@ -12,6 +12,46 @@ ul,ol{
 	list-style: none;
 }
 
+#header{
+	/* overflow: hidden; */
+}
+
+.menu{
+	/* float: right; */
+	/* height: 100px; */
+	text-align: right;
+}
+
+.menu li{
+	/* float: left; */
+	display: inline-block;
+	padding: 10px;
+	font-size: 12px;
+	color: #272727;
+}
+
+.menu .menu-item.grid{
+	background-image: url('https://ssl.gstatic.com/gb/images/i1_1967ca6a.png');
+	height: 15px;
+	width: 30px;
+/* 	for background-images, you can use the background-position property
+	by default, background-images start at 0,0.
+	Sometimes you won't want to start there (i.e., a sprite sheet) */
+	background-position: -119px -36px;
+}
+
+.menu .menu-item.bell{
+	background-image: url('https://ssl.gstatic.com/gb/images/i1_1967ca6a.png');
+	height: 15px;
+	width: 30px;
+/* 	for background-images, you can use the background-position property
+	by default, background-images start at 0,0.
+	Sometimes you won't want to start there (i.e., a sprite sheet) */
+	background-position: -194px -21px;
+	background-color: rgba(0,0,0,.55);
+
+}
+
 #footer{
 	position: absolute;
 	bottom: 0;

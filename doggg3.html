@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        /* Background Color */
+        body {
+            background: pink;
+        }
+        /* Invisible box */
+        .box {
+            position: relative;
+            margin: auto;
+            display: block;
+            margin-top: 8%;
+            width: 600px;
+            height: 420px;
+            background: none;
+        }
+        .head {
+            position: absolute;
+            top: 16.5%;
+            left: 25%;
+            width: 50%;
+            height: 67%;
+            background: cornsilk;
+            border-radius: 50%;
+/*          left = (100 - width) / 2
+            top = (100 - height) / 2*/
+        }
+        .head-copy {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: gray;
+            border-radius: 60px 60px 30px 30px;
+            z-index: 2;
+        }
+        .ear-left {
+          position: absolute;
+          width: 40%;
+          height: 40%;
+          left: -10%;
+          top: -3%;
+          background: gray;
+          border-radius: 60px 60px 30px 30px;
+          z-index: 1;
+        }
+        .ear-right {
+          position: absolute;
+          width: 40%;
+          height: 40%;
+          right: -10%;
+          top: -3%;
+          background: gray;
+          border-radius: 60px 60px 30px 30px;
+          z-index: 1;
+        }
+        .eye-left {
+          position: absolute;
+          background: black;
+          width: 10%;
+          height: 10%;
+          top: 30%;
+          left: 20%;
+          border-radius: 50%;
+          z-index: 3;
+        } 
+        .eye-right {
+          position: absolute;
+          background: black;
+          width: 10%;
+          height: 10%;
+          top: 30%;
+          right: 20%;
+          border-radius: 50%;
+          z-index: 2;
+        }
+        .nose {
+          position: absolute;
+          background: black;
+          width: 7%;
+          height: 5%;
+          top: 35%;
+          right: 45%;
+          border-radius: 50%;
+          z-index: 2;
+        }
+        .mouth {
+          position: absolute;
+          background: pink;
+          width: 7%;
+          height: 5%;
+          top: 45%;
+          right: 45%;
+          border-radius: 30px 30px 60px 60px;
+          z-index: 3;
+        }
+        .tail {
+          position: absolute;
+          background: gray;
+          width: 50%;
+          height: 10%;
+          top: 73.5%;
+          right: 45%;
+          border-radius: 2px 2px 2px 60px;
+          z-index: 3;
+        }
+        .pink-tail {
+          position: absolute;
+          background: pink;
+          width: 50%;
+          height: 10%;
+          top: 78%;
+          right: 45%;
+          border-radius: 20px 10px 60px 60px;
+          z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <!-- Begin Image -->
+ <!-- Invisible Box-->
+ <div class="box">
+   
+    <!-- Harley Head-->
+        <div class="head">  
+      
+      <!-- Circular Head Copy -->
+      <div class="head-copy"></div>
+      
+       <!-- Left Ear ~ Light Gray-->
+      <div class="ear-left">
+        
+       <!-- Inner ear ~ Dark Gray -->
+      <div class="mouth"></div>
+      </div>
+      
+      <!-- Right Ear ~ Light Gray-->
+       <div class="ear-right">
+      <!-- Inner Ear ~ Dark Gray-->
+        <div class="inner-ear"></div>
+      </div>
+      
+      <!-- Left Outer Eye ~ White -->
+      <div class="eye-left">
+        <!-- Pupil ~ Black -->
+        <div class="pupil">
+        </div>
+      </div>
+      
+      <!-- Right Outer Eye ~ White -->
+      <div class="eye-right">
+        <!-- Pupil ~ Black -->
+        <div class="pupil">
+        </div>
+      </div>
+      
+       <!-- Nose ~ Brown -->
+       <div class="nose">
+       </div>
+                          <!-- Inner ear ~ Dark Gray -->
+      <div class="mouth"></div>
+      </div>
+                   <!-- Inner ear ~ Dark Gray -->
+      <div class="tail"></div>
+      </div>
+                   <!-- Inner ear ~ Dark Gray -->
+      <div class="pink-tail"></div>
+      </div>
+      
+      
+    <!-- End Head -->
+    </div>
+ <!-- End Invisible Box -->
+ </div>
+</body>
+</html>

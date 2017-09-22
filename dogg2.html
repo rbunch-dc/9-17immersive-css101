@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dog?</title>
+
+	<style>
+
+	.dog{
+		position:relative;
+		margin: 0 auto;
+		width: 63%;
+		max-width: 63%;
+		display: inline-block;
+	}
+
+	.head{
+		background-color: tan;
+		width: 132px;
+		height: 185px;
+		border-radius: 100px/ 50px;
+		position: absolute;
+		right: 56%;
+		margin-top: 24%;
+		transform: rotate(62deg);
+		box-shadow: 2px 0 0 0  #734d26;
+		z-index: 3;
+		
+	}
+	.ear{
+		width: 200px;
+		height: 100px;
+		background: tan;
+		position: absolute;
+		border-radius: 100px / 50px;
+	}
+	.left-ear{
+		right: 59%;
+		margin-top: 33%;
+		transform: rotate(110deg);
+		background-color: #c68c53;
+		z-index: 2;
+
+	}
+	.right-ear{
+		right: 43%;
+		margin-top: 28%;
+		transform: rotate(64deg);
+		background-color: #c68c53;
+		z-index: 4;
+	}
+	.inner{
+		width: 34px;
+		height: 98px;
+		background: pink;
+		position: absolute;
+		border-radius: 50px / 50px;
+	}
+	.inner-left-ear{
+		right: 72%;
+		margin-top: 34%;
+		transform: rotate(18deg);
+		z-index: 2;
+
+	}
+	.inner-right-ear{
+		right: 53%;
+		margin-top: 31%;
+		transform: rotate(-23deg);
+		z-index: 5;
+	}
+	.nose{
+		width: 49px;
+		height: 40px;
+		border-radius: 50px;
+		background-color: #4d2600;
+		position: absolute;
+		right: 67%;
+		margin-top: 41%;
+		z-index: 4;
+	}
+	.eye{
+		width: 25px;
+		height: 27px;
+		border-radius: 50px;
+		background-color: black;
+		position: absolute;
+		z-index: 5;
+	}
+	.l-eye{
+		right: 72%;
+		margin-top: 31%;
+
+	}
+	.r-eye{
+		right: 64%;
+		margin-top: 32%;
+	}
+	.whiskers{
+		width: 0;
+		height: 0;
+		border-left: 0px solid transparent;
+		border-right: 5px solid transparent;
+		border-bottom: 78px solid black;
+		position: absolute;
+		z-index: 6;
+	}
+	.r-whiskers{
+		right: 53%;
+		margin-top: 38%;
+		-ms-transform: rotate(71deg); /* IE 9 */
+		-webkit-transform: rotate(71deg); /* Safari */
+		transform: rotate(71deg);
+	}
+	.rw2{
+		right: 53%;
+		margin-top: 37%;
+		-ms-transform: rotate(70deg); /* IE 9 */
+		-webkit-transform: rotate(70deg); /* Safari */
+		transform: rotate(70deg);
+
+	}
+	.rw3{
+		right: 53%;
+		margin-top: 36%;
+		-ms-transform: rotate(66deg); /* IE 9 */
+		-webkit-transform: rotate(66deg); /* Safari */
+		transform: rotate(66deg);
+	}
+	.rw4{
+		right: 53%;
+		margin-top: 39%;
+		-ms-transform: rotate(80deg); /* IE 9 */
+		-webkit-transform: rotate(80deg); /* Safari */
+		transform: rotate(80deg);
+	}
+
+	.l-whiskers{
+		right: 71%;
+		margin-top: 39%;
+		-ms-transform: rotate(-79deg); /* IE 9 */
+		-webkit-transform: rotate(-79deg); /* Safari */
+		transform: rotate(-79deg);
+	}
+	.lw2{
+		right: 71%;
+		margin-top: 37%;
+		-ms-transform: rotate(-70deg); /* IE 9 */
+		-webkit-transform: rotate(-70deg); /* Safari */
+		transform: rotate(-70deg);
+
+	}
+	.lw3{
+		right: 71%;
+		margin-top: 38%;
+		-ms-transform: rotate(-75deg); /* IE 9 */
+		-webkit-transform: rotate(-75deg); /* Safari */
+		transform: rotate(-75deg);
+	}
+	.lw4{
+		right: 71%;
+		margin-top: 36%;
+		-ms-transform: rotate(-67deg); /* IE 9 */
+		-webkit-transform: rotate(-67deg); /* Safari */
+		transform: rotate(-67deg);
+	}
+	.body{
+		background-color: tan;
+		width: 149px;
+		height: 258px;
+		border-radius: 100px/ 50px;
+		position: absolute;
+		right: 44%;
+		margin-top: 31%;
+		transform: rotate(89deg);
+		z-index: 2;
+	}	
+	.leg{
+		width: 50px;
+		height: 100px;
+		background: tan;
+		position: absolute;
+		border-radius: 100px / 50px;
+		z-index: 1;
+	}
+	.fl-leg{
+		right: 69%;
+		margin-top: 50%;
+		transform: rotate(1deg);
+		z-index: 1;
+
+	}
+	.fr-leg{
+		right: 58%;
+		margin-top: 55%;
+		transform: rotate(1deg);
+
+	}
+	.bl-leg{
+		right: 46%;
+		margin-top: 50%;
+		transform: rotate(1deg);
+
+	}
+	.br-leg{
+		right: 38%;
+		margin-top: 52%;
+		transform: rotate(1deg);
+
+	}
+	.tail{
+		width: 116px;
+		height: 137px;
+		border-radius: 50%;
+		box-shadow: 15px 15px 0 0 #c68c53;
+		position: absolute;
+		right: 33%;
+		margin-top: 24%;
+		z-index: 1;
+	}
+	.sky{
+		position: fixed;
+		top: 0;
+		background-color: #ccebff;
+		width:62%;
+		max-width: 62%;
+		height: 67vh;
+	}
+	.grass{
+		position:fixed;
+		bottom: 0;
+		background-color: #206020;
+		width: 62%;
+		max-width:62%;
+		height: 35vh;
+	}
+	.l-bone{
+		width: 49px;
+		height: 72px;
+		background: wheat;
+		border-radius: 50px;
+		position: absolute;
+		right: 35%;
+		margin-top: 76%;
+		z-index: 9;
+	}
+	.bone{
+		width: 50px;
+		height: 100px;
+		background: wheat;
+		position: absolute;
+		border-radius: 100px / 50px;
+		right: 28%;
+		margin-top: 74%;
+		transform: rotate(90deg);
+		z-index: 9;
+	}
+
+	.r-bone{
+		width: 49px;
+		height: 72px;
+		background: wheat;
+		border-radius: 50px;
+		position: absolute;
+		right: 21%;
+		margin-top: 76%;
+		z-index: 9;
+	}
+
+		</style>
+</head>
+<body>
+	<div class="dog">
+			<div class="head">
+			</div>
+					<<!-- div class="whiskers r-whiskers">
+					</div>
+					<div class="whiskers rw2">
+					</div>
+					<div class="whiskers rw3">
+					</div>
+					<div class="whiskers rw4">
+					</div>
+
+					<div class="whiskers l-whiskers">
+					</div>
+					<div class="whiskers lw2">
+					</div>
+					<div class="whiskers lw3">
+					</div>
+					<div class="whiskers lw4">
+					</div> -->
+				<div class="ear left-ear">
+				</div>
+					<div class="inner inner-left-ear">
+					</div>
+				<div class="ear right-ear">
+				</div>
+					<div class="inner inner-right-ear">
+					</div>
+				<div class="nose">
+				</div>
+					<div class="eye l-eye">
+					</div>
+					<div class="eye r-eye">
+					</div>	
+						<div class="body">
+						</div>	
+					<div class="leg fl-leg">
+					</div>
+					<div class="leg fr-leg">
+					</div>
+					<div class="leg bl-leg">
+					</div>
+					<div class="leg br-leg">
+					</div>	
+				<div class="tail">
+				</div>
+			<div class="sky">
+			</div>		
+			<div class="grass">
+			</div>
+			<div class="l-bone">
+			</div>
+			<div class="bone">
+			</div>
+			<div class="r-bone">
+			</div>
+
+	</div>
+</body>
+</html>

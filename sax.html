@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Saxophone</title>
+    <style>
+        #saxophone {
+            float: left;
+            margin-right: 5%;
+            width: 500px;
+            height: 500px;
+            position: relative;
+            display: inline-block
+        }
+        
+        #mouthpiece {
+            background: black;
+            width: 100px;
+            height: 73px;
+            float: left;
+        }
+        
+        #neck {
+            background: gold;
+            width: 82px;
+            height: 73px;
+            float: left;
+        }
+        
+        #body {
+            background: gold;
+            width: 79px;
+            height: 400px;
+            float: left;
+        }
+        /* #top-keys {
+            background: gold;
+            border: 2px solid black;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+        } */
+        
+        #top-key1 {
+            background: gold;
+            border: 2px solid black;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+            top: 51px;
+            left: 227px;
+        }
+        
+        #top-key2 {
+            background: gold;
+            border: 2px solid black;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+            top: 100px;
+            left: 227px;
+        }
+        
+        #top-key3 {
+            background: gold;
+            border: 2px solid black;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+            top: 150px;
+            left: 227px;
+        }
+        /* #bottom-keys {
+            background: gold;
+            border: 2px solid black;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+        } */
+        
+        #bottom-key1 {
+            background: gold;
+            border: 2px solid black;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+            left: 170px;
+            top: 223px;
+        }
+        
+        #bottom-key2 {
+            background: gold;
+            border: 2px solid black;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+            left: 170px;
+            top: 270px
+        }
+        
+        #bottom-key3 {
+            background: gold;
+            border: 2px solid black;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+            left: 170px;
+            top: 319px
+        }
+        
+        #curve {
+            background: gold;
+            width: 60px;
+            height: 100px;
+            float: left;
+            margin-top: 63%;
+        }
+        
+        #bell {
+            background: gold;
+            width: 92px;
+            height: 200px;
+            float: left;
+            margin-top: 40%;
+        }
+        
+        #sax-pic {
+            float: right;
+            margin-left: 5%;
+            display: inline-block
+        }
+    </style>
+</head>
+
+<body>
+    <div id="saxophone">
+        <div id="mouthpiece"></div>
+        <div id="neck"></div>
+        <div id="body"></div>
+        <div id="top-keys">
+            <div id="top-key1"></div>
+            <div id="top-key2"></div>
+            <div id="top-key3"></div>
+        </div>
+        <div id="bottom-keys">
+            <div id="bottom-key1"></div>
+            <div id="bottom-key2"></div>
+            <div id="bottom-key3"></div>
+        </div>
+        <div id="curve"></div>
+        <div id="bell"></div>
+    </div>
+    <!-- FOR COMPARISON -->
+    <img id="sax-pic" src="sax.jpg" alt="saxophone for comparison">
+</body>
+
+</html>

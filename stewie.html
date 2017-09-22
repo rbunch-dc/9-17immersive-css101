@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+
+	<style type="text/css" media="screen">
+	body{
+		background-color: skyblue;
+	}
+
+	.head{
+		width: 600px;
+		height: 300px;
+		background: peachpuff;
+		border-radius: 300px / 150px;
+		border: 2px solid black;
+		position: absolute;
+		margin: 200px;
+		left: 100px;
+			}
+	
+	.stewie{
+		margin: auto;
+		position: relative;
+		text-align: center;
+}
+	.eye-left{
+		background-color: white;
+		position: absolute;
+		height: 75px;
+		width: 75px;
+		border-radius: 50%;
+		border: 1px solid black;
+		left: 450px;
+		top: 300px;
+}
+	.eye-right{
+		background-color: white;
+		position: absolute;
+		height: 75px;
+		width: 75px;
+		border-radius: 50%;
+		border: 1px solid black;
+		z-index: 2;
+		right: 610px;
+		top: 305px;
+}
+
+	/* .eye{
+		background-color: white;
+		height: 75px;
+		width: 75px;
+		border-radius: 50%;
+		position: absolute;
+		border: 1px solid black;
+} */
+	.pupil-left{
+		height: 15px;
+		width: 15px;
+		background-color:  black;
+		border-radius: 50%;
+		position: absolute;
+		left: 480px;
+		top: 333px;
+
+	}
+
+	.pupil-right{
+		height: 15px;
+		width: 15px;
+		background-color:  black;
+		border-radius: 50%;
+		position: absolute;
+		z-index: 2;
+		right: 640px;
+		top: 336px;
+}
+	.eyelid-left{
+		height: 30px;
+		width: 71px;
+		background-color:  peachpuff;
+		border-radius:  71px 71px 0px 0px;
+		border: 1px solid black;
+		position: absolute;
+		left: 452px;
+		top: 301px;
+
+}
+
+	.eyelid-right{
+		height: 30px;
+		width: 71px;
+		background-color:  peachpuff;
+		border-radius:  71px 71px 0px 0px;
+		border: 1px solid black;
+		position: absolute;
+		z-index: 2;
+		right: 612px;
+		top: 305px;
+}
+	.eyebrow-left{
+		height: 3px;
+		width: 50px;
+		background-color: black;
+		position: absolute;
+		left: 463px;
+		top: 300px;
+
+}	.eyebrow-right{
+		height: 3px;
+		width: 50px;
+		background-color: black;
+		position: absolute;
+		right: 622px;
+		top: 303px;
+}
+	.hair-1{
+		height: 20px;
+		width: 4px;
+		background: black;
+		position: absolute;
+		left: 460px;
+		top: 218px;
+}
+	.hair-2{
+		height: 20px;
+		width: 4px;
+		background: black;
+		position: absolute;
+		left: 500px;
+		top: 210px;
+}
+	.hair-3{
+		height: 20px;
+		width: 4px;
+		background: black;
+		position: absolute;
+		left: 540px;
+		top: 203px;
+}
+	.hair-4{
+		height: 18px;
+		width: 4px;
+		background: black;
+		position: absolute;
+		left: 580px;
+		top: 201px;
+}
+	.hair-5{
+		height: 20px;
+		width: 4px;
+		background: black;
+		position: absolute;
+		left: 620px;
+		top: 201px;
+}
+	.hair-6{
+		height: 20px;
+		width: 4px;
+		background: black;
+		position: absolute;
+		left: 660px;
+		top: 205px;
+}
+	.hair-7{
+		height: 20px;
+		width: 4px;
+		background: black;
+		position: absolute;
+		left: 700px;
+		top: 210px;
+}
+	.nose{
+		width: 0;
+		height: 0;
+		border-top: 15px solid transparent;
+		border-left: 30px solid black;
+		border-bottom: 15px solid transparent;
+		position: absolute;
+		left: 590px;
+		top: 340px;
+}
+	.nose-fill{
+		width: 0;
+		height: 0;
+		border-top: 14px solid transparent;
+		border-left: 28px solid peachpuff;
+		border-bottom: 14px solid transparent;
+		position: absolute;
+		left: 590px;
+		top: 341px;
+}
+	.mouth{
+		width: 45px;
+		height: 45px;
+		background: black;
+		position: absolute;
+		left: 570px;
+		top: 390px;
+		border-radius:  0px 0px 0px 30px;
+}
+	.mouth-fill{
+		width: 46px;
+		height: 44px;
+		background: peachpuff;
+		position: absolute;
+		left: 569px;
+		top: 390px;
+		border-radius:  0px 0px 0px 31px;
+}
+	.text-top{
+		position: absolute;
+		font-family: 'Luckiest Guy', cursive;
+		color: white;
+		font-size: 100px;
+		left: 430px;
+		top: 50px;
+}
+	.text-bottom{
+		position: absolute;
+		font-family: 'Luckiest Guy', cursive;
+		color: white;
+		font-size: 100px;
+		left: 430px;
+		top: 550px;
+}
+
+
+
+
+
+
+
+
+
+
+	</style>
+
+</head>
+<body>
+
+	<div class="stewie">
+		<div class="head"></div>
+		<div class="eye-left"></div>
+		<div class="eye-right"></div>
+		<div class="nose"></div>
+		<div class="nose-fill"></div>
+		<div class="eyelid-left"></div>
+		<div class="eyelid-right"></div>
+		<div class="pupil-left"></div>
+		<div class="pupil-right"></div>
+		<div class="eyebrow-left"></div>
+		<div class="eyebrow-right"></div>
+		<div class="hair-1"></div>
+		<div class="hair-2"></div>
+		<div class="hair-3"></div>
+		<div class="hair-4"></div>
+		<div class="hair-5"></div>
+		<div class="hair-6"></div>
+		<div class="hair-7"></div>
+		<div class="mouth"></div>
+		<div class="mouth-fill"></div>
+		<div class="text-top">
+			Stewie
+		</div>
+		<div class="text-bottom">
+			Griffin
+		</div>
+
+	</div>
+
+
+
+</body>
+</html>
