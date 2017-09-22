@@ -2,6 +2,11 @@ body{
 	background-color: #E9EBEE;
 }
 
+a{
+	text-decoration: none;
+	color: black;
+}
+
 #header{
 	height: 42px;
 	background-color: #4267B2
@@ -70,6 +75,16 @@ body{
 
 .left-content{
 	width: 20%;
+}
+
+.left-content .left-menu-item{
+	padding: 10px;
+}
+
+/* Pseudo classes like "hover" are only applied to the element under
+certain circumstatnces */
+.left-content .left-menu-item:hover{
+	background-color: white;
 }
 
 .main-content{
